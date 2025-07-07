@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Press_start';
+    src: url('./fonts/PressStart2P-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./media/bg-gif.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    min-height: 100vh;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#title-text {
+    font-family: 'Press_start';
+    font-size: 150px;
+    color: #eb0e20;
+    -webkit-text-stroke-width: 0.01px;
+    -webkit-text-stroke-color: yellow;
+}
+
+#start-btn {
+    font-family: 'Press_start';
+    font-size: 50px;
+    margin-top: 200px;
+    cursor: pointer;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#board-game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* width: 1300px;
+    height: 1300px; */
+    margin: 200px;
+}
+
+button[id^="Btn"] {
+    font-family: 'Press_start';
+    font-size: 170px;
+    background-color: #457B9D;
+    text-align: center;
+    color: #A8DADC;
+    cursor: pointer;
+}
+
+img {
+    mix-blend-mode: exclusion;
+    margin-top: 200px;
+    width: 300px;
+}
+
+#restart-game {
+    font-family: 'Press_start';
+    font-size: 50px;
+    /* margin-top: 50px; */
+    cursor: pointer;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
